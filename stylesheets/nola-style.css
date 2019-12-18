@@ -20,7 +20,16 @@ html, body {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+  transition: transform 1s;
   width: 100%;
+}
+
+.column img:hover {
+  position: relative;
+  overflow: scroll;
+  transform: scale(1.5);
+  display:block;
+  z-index:999;
 }
 
 @media screen and (max-width: 800px) {
